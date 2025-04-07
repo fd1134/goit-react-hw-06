@@ -1,10 +1,10 @@
 // store.js
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import { persistStore, persistReducer } from "redux-persist";
+import storage from "redux-persist/lib/storage";
 
-import contactsReducer from './contactsSlice';
-import filtersReducer from './filtersSlice';
+import contactsReducer from "./contactsSlice";
+import filtersReducer from "./filtersSlice";
 
 // Tüm reducer'ları combine et
 const rootReducer = combineReducers({
@@ -14,7 +14,7 @@ const rootReducer = combineReducers({
 
 // persist yapılandırması
 const persistConfig = {
-  key: 'root',
+  key: "root",
   storage,
 };
 
